@@ -14,6 +14,7 @@
 Tutorial Link
 ```
 https://medium.com/@devlob/creating-apis-in-laravel-5-5-using-api-resources-9850c1b70efb
+https://medium.com/@dinotedesco/using-laravel-5-5-resources-to-create-your-own-json-api-formatted-api-2c6af5e4d0e8
 ```
 
 ## About Laravel
