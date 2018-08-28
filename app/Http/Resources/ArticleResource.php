@@ -14,6 +14,17 @@ class ArticleResource extends Resource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        // return parent::toArray($request);
+        return [
+          'type'  => 'articles',
+          'id'    => (string)$this->id,
+          'attributes' => [
+            'title' => $this->title,
+          ],
+          'relationships' => new ArticlesRelationshipResource($this),
+          'links' => [
+            'self' => route('articles.show', ['article' => $this->id]),
+          ],
+        ];
     }
 }
